@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="assets/home/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/home/css/style.css"/>
+	</head>
+	<body ng-app="food">
+		<!-- <div ng-include="'src/public/nav.html'"></div> -->
+		<!-- <div ng-include="'src/public/banner.html'"></div> -->
+		
+		<!-- 模板的插入位置 -->
+		<div ui-view="nav"></div>
+		<div ui-view="banner"></div>
+		<div ui-view="content"></div>
+		<div ui-view="footer"></div>
+		
+		<!-- <div ng-include="'src/public/footer.html'"></div> -->
+	</body>
+</html>
+
+<!-- 核心文件 -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="assets/home/js/jquery-1.11.0.js"></script>
+
+<!-- 依赖文件 -->
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!-- 入口文件，在此配置依赖 -->
+<script type="text/javascript" src="home-app.js"></script>
+<!-- 路由文件 -->
+<script type="text/javascript" src="routers/homeRouter.js"></script>
+
+<script type="text/javascript" src="services/home/bannerFactory.js"></script>
+<script type="text/javascript" src="services/home/navFactory.js"></script>
+<script type="text/javascript" src="services/home/footerFactory.js"></script>
+<script type="text/javascript" src="services/home/newsFactory.js"></script>
+<script type="text/javascript" src="services/home/pageFactory.js"></script>
+<script type="text/javascript" src="services/home/foodFactory.js"></script>
+<!-- 控制器文件 -->
+<script type="text/javascript" src="controllers/home/indexController.js"></script>
+<script type="text/javascript" src="controllers/home/bannerController.js"></script>
+<script type="text/javascript" src="controllers/home/navController.js"></script>
+<script type="text/javascript" src="controllers/home/footerController.js"></script>
+<script type="text/javascript" src="controllers/home/indexController.js"></script>
+
+<script type="text/javascript" src="assets/home/js/banner.js"></script>
+
+<script type="text/javascript" src="assets/home/js/index.js"></script>

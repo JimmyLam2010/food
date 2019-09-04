@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze后台管理系统模板HTML首页 - 源码之家</title>
+  <meta name="description" content="这是一个 index 页面">
+  <meta name="keywords" content="index">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="i/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <!-- 配合ui.bootstrap使用 -->
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../assets/admin/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="../assets/admin/css/admin.css">
+
+</head>
+<body ng-app="food_admin">
+
+	<!--[if lt IE 9]>
+	<script src="js/jquery1.11.1.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/polyfill/rem.min.js"></script>
+	<script src="js/polyfill/respond.min.js"></script>
+	<script src="js/amazeui.legacy.js"></script>
+	<![endif]-->
+	<div class="am-cf admin-main">
+		<div ui-view="header"></div>
+		<div ui-view="sidebar"></div>
+		<div ui-view="content"></div>
+		<div ui-view="footer"></div>
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+
+<!-- 依赖文件 -->
+<!-- 路由 -->
+<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="../bower_components/angular-resource/angular-resource.js"></script>
+<!-- ui.bootstrap -->
+<script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+<!-- 入口文件 -->
+<script type="text/javascript" src="../admin-app.js"></script>
+<!-- 路由文件 -->
+<script type="text/javascript" src="../routers/adminRouter.js"></script>
+<!-- 服务 -->
+<script type="text/javascript" src="../services/admin/foodFactory.js"></script>
+<script type="text/javascript" src="../services/admin/foodCateFactory.js"></script>
+<script type="text/javascript" src="../services/admin/formFactory.js"></script>
+<script type="text/javascript" src="../services/admin/newsFactory.js"></script>
+<script type="text/javascript" src="../services/admin/shopFactory.js"></script>
+<script type="text/javascript" src="../services/admin/regionFactory.js"></script>
+<script type="text/javascript" src="../services/admin/companyFactory.js"></script>
+<script type="text/javascript" src="../services/admin/friendlyLinkFactory.js"></script>
+<script type="text/javascript" src="../services/admin/settingFactory.js"></script>
+<script type="text/javascript" src="../services/admin/bannerFactory.js"></script>
+<script type="text/javascript" src="../services/admin/adminListFactory.js"></script>
+<script type="text/javascript" src="../services/admin/navFactory.js"></script>
+<script type="text/javascript" src="../services/admin/pageFactory.js"></script>
+
+<!-- 控制器文件 -->
+<script type="text/javascript" src="../controllers/admin/adminController.js"></script>
+<script type="text/javascript" src="../controllers/admin/foodController.js"></script>
+<script type="text/javascript" src="../controllers/admin/foodCateController.js"></script>
+<script type="text/javascript" src="../controllers/admin/newsController.js"></script>
+<script type="text/javascript" src="../controllers/admin/shopController.js"></script>
+<script type="text/javascript" src="../controllers/admin/regionController.js"></script>
+<script type="text/javascript" src="../controllers/admin/companyController.js"></script>
+<script type="text/javascript" src="../controllers/admin/friendlyLinkController.js"></script>
+<script type="text/javascript" src="../controllers/admin/settingController.js"></script>
+<script type="text/javascript" src="../controllers/admin/bannerController.js"></script>
+<script type="text/javascript" src="../controllers/admin/adminListController.js"></script>
+<script type="text/javascript" src="../controllers/admin/navController.js"></script>
+<script type="text/javascript" src="../controllers/admin/pageController.js"></script>
+
+<script type="text/javascript" src="../bower_components/ng-file-upload/ng-file-upload.js"></script>
+<script type="text/javascript" src="../bower_components/ng-file-upload/ng-file-upload-shim.js"></script>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/admin/js/jquery.min.js"></script>
+<script src="../assets/admin/js/amazeui.min.js"></script>
+<!--<![endif]-->

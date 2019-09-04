@@ -1,0 +1,54 @@
+<div id="content">
+	<div class="new-wrap">
+		<p class="newfood-tit">新品推荐</p>
+		<div class="newfood-box clearfix" id="newfood-table">
+			<ul class="newfood-wrap clearfix newfood-show">
+				<li class="newfood-item newfood-right newfood-li{{item.food_id}}" ng-repeat="item in food">
+					<a ui-sref="index.meishi.detail" class="newfood-p{{ item.food_id }}">{{ item.title }}</a>
+				</li>
+			</ul>
+			<ul class="newfood-wrap clearfix">
+				<li class="newfood-item newfood-right newfood-li{{item.food_id}}" ng-repeat="item in food">
+					<a ui-sref="index.meishi.detail" class="newfood-p{{ item.food_id }}">{{ item.title }}</a>
+				</li>
+			</ul>
+			<ul class="newfood-wrap clearfix">
+				<li class="newfood-item newfood-right newfood-li{{item.food_id}}" ng-repeat="item in food">
+					<a ui-sref="index.meishi.detail" class="newfood-p{{ item.food_id }}">{{ item.title }}</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix" id="newfood-span">
+			<span style="background: url('img/icon-2.png');"></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="company-wrap">
+		<p class="company-tit">{{ page.title }}</p>
+		<dl class="clearfix company-dl">
+			<dt class="company-dt">
+				<img src="{{ page.pic }}"/>
+			</dt>
+			<dd class="company-dd">
+				{{ page.content }}
+			</dd>
+		</dl>
+	</div>
+	<div class="news-wrap">
+		<p class="news-tit">新闻资讯</p>
+		<dl class="clearfix news-dl">
+			<dt class="news-dt">
+				<img src="assets/home/img//pic2.jpg"/>
+			</dt>
+			<dd class="news-dd">
+				<a href="news-con.html" class="news-link clearfix" ng-repeat="item in news">
+					<p class="link-tit">{{ item.title }}</p>
+					<p class="link-time">{{ item.create_time | date:'yyyy-MM-dd' }}</p>
+				</a>
+			</dd>
+		</dl>
+	</div>
+</div>
+
+		
